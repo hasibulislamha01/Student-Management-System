@@ -1,18 +1,13 @@
-import './home.css'
+import Banner from "./Banner";
+import Skills from "./Skills";
+import WelcomeSection from "./WelcomeSection";
 
 const Home = () => {
     return (
-        <div className="p-32 bg-[#e1e2db] h-screen flex justify-between items-center ">
-            <div className="space-y-4 text-[#333333]">
-                <h3 className="text-3xl font-semibold">I am Hasibul</h3>
-                <h3 className="text-3xl">A passionate
-                </h3>
-                <h1 className="text-5xl font-bold">Web Developer</h1>
-            </div>
-
-            <div>
-                <img className="profileImage w-[350px] h-[350px] rounded-full" src="https://i.ibb.co/F060y4D/FB-IMG-1703931495032-2-1-removebg-preview.png" alt="" />
-            </div>
+        <div className="space-y-32">
+            <Banner></Banner>
+            <WelcomeSection></WelcomeSection>
+            <Skills></Skills>
         </div>
     );
 };

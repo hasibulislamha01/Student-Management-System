@@ -7,7 +7,9 @@ const Navbar = () => {
 
     const navItems =
         <>
-            <NavLink to='/' end className={({ isActive }) => isActive ? 'text-sky-500 border-b-2 border-sky-500' : 'border-gray-500'}>Home</NavLink>
+            <NavLink to='/' end className={({ isActive }) => isActive ? 'text-black border-b-2 border-black' : 'text-gray-500 border-gray-500'}>Home</NavLink>
+
+            <NavLink to='/blogs' end className={({ isActive }) => isActive ? 'text-black border-b-2 border-black' : 'text-gray-500 border-gray-500'}>Blogs</NavLink>
 
 
         </>
@@ -16,7 +18,7 @@ const Navbar = () => {
             <div className="navbar container mx-auto min-w-12  flex justify-center">
 
                 <div className="navbar-start">
-                    <a className="btn btn-ghost text-xl">Name</a>
+                    <a className="font-semibold text-xl">Hasibul Islam</a>
                 </div>
 
                 <div className="navbar-end items-center gap-4 hidden lg:inline-flex font-medium">
