@@ -1,13 +1,8 @@
-import Banner from "./Banner";
-import Skills from "./Skills";
-import WelcomeSection from "./WelcomeSection";
 
 const Home = () => {
     return (
-        <div className="space-y-32">
-            <Banner></Banner>
-            <WelcomeSection></WelcomeSection>
-            <Skills></Skills>
+        <div className="text-5xl text-center pt-12">
+            This is Homepage
         </div>
     );
 };
