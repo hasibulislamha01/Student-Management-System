@@ -14,7 +14,7 @@ const Navbar = () => {
 
         </>
     return (
-        <div className="w-full h-[50px] fixed z-50 flex items-center justify-center">
+        <div className="bg-amber-500 w-full h-[50px] fixed z-50 flex items-center justify-center">
             <div className="navbar container mx-auto min-w-12  flex justify-center">
 
                 <div className="navbar-start">
