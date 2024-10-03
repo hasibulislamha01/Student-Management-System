@@ -21,7 +21,7 @@ const InputField = ({ label, type, fieldName, register, errors, validation, plac
 };
 
 InputField.propTypes = {
-    label: PropTypes.string.isRequired,
+    label: PropTypes.string,
     type: PropTypes.string.isRequired,
     fieldName: PropTypes.string.isRequired,
     register: PropTypes.func.isRequired,

@@ -1,8 +1,10 @@
+import StudentsList from "../Students/StudentsList";
 
 const Home = () => {
     return (
-        <div className="text-5xl text-center pt-12">
-            This is Homepage
+        <div className="pt-12">
+            
+            <StudentsList/>
         </div>
     );
 };

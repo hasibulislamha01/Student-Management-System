@@ -2,6 +2,9 @@ import { useForm } from "react-hook-form";
 import InputField from "./InputField";
 import SelectItem from "../../Components/AddStudentPageComponents/SelectItem";
 import TextAreaField from "../../Components/TextAreaField";
+import { useDispatch } from "react-redux";
+import { v4 as uuidv4 } from 'uuid'; 
+import { addStudent } from "../../AppRedux/StudentSlice";
 
 const classOptions = [
     { value: '1', label: '1' },
@@ -28,9 +31,19 @@ const divisionOptions = [
 ]
 
 const AddStudent = () => {
+
+    const dispatchAction = useDispatch()
+    // const studentId = useId()
     const { register, handleSubmit, formState: { errors } } = useForm()
+    
     const handleFormSubmit = (data) => {
-        console.log('submitted', data);
+        const studentId = uuidv4();
+        const newStudentInfo = {
+            ...data,
+            id: studentId
+        }
+        console.log('submitted', newStudentInfo);
+        dispatchAction(addStudent(newStudentInfo))
     }
     return (
         <div className="py-20 min-h-screen flex flex-col justify-center container mx-auto">
